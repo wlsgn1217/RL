@@ -1,0 +1,18 @@
+{
+    "os": "Linux-5.4.0-67-generic-x86_64-with-glibc2.10",
+    "python": "3.8.5",
+    "heartbeatAt": "2021-03-18T16:57:46.775571",
+    "startedAt": "2021-03-18T16:57:45.785546",
+    "docker": null,
+    "gpu": "GeForce RTX 3090",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "codePath": "Updated_SAC_main.py",
+    "program": "/home/irslab/catkin_ws/src/moveit_test/scripts/Updated_SAC_main.py",
+    "host": "irslab-MS-7C79",
+    "username": "irslab",
+    "executable": "/home/irslab/anaconda3/envs/jinhoo/bin/python"
+}

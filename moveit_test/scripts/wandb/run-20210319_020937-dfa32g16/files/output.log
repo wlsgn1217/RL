@@ -1,0 +1,67 @@
+episode  0 score -521.5 trailing 100 games average -521.5 steps 30 indy_move
+episode  1 score -535.9 trailing 100 games average -528.7 steps 60 indy_move
+episode  2 score -489.4 trailing 100 games average -515.6 steps 90 indy_move
+episode  3 score -487.9 trailing 100 games average -508.7 steps 120 indy_move
+episode  4 score -517.5 trailing 100 games average -510.4 steps 150 indy_move
+episode  5 score -528.6 trailing 100 games average -513.5 steps 180 indy_move
+episode  6 score -503.6 trailing 100 games average -512.0 steps 210 indy_move
+episode  7 score -468.3 trailing 100 games average -506.6 steps 240 indy_move
+episode  8 score -290.2 trailing 100 games average -482.5 steps 270 indy_move
+episode  9 score -289.9 trailing 100 games average -463.3 steps 300 indy_move
+episode  10 score -486.5 trailing 100 games average -465.4 steps 330 indy_move
+episode  11 score -407.5 trailing 100 games average -460.6 steps 360 indy_move
+episode  12 score -151.7 trailing 100 games average -436.8 steps 390 indy_move
+episode  13 score -301.8 trailing 100 games average -427.2 steps 420 indy_move
+episode  14 score -353.5 trailing 100 games average -422.2 steps 450 indy_move
+episode  15 score 32.8 trailing 100 games average -393.8 steps 480 indy_move
+episode  16 score -432.9 trailing 100 games average -396.1 steps 510 indy_move
+episode  17 score -307.1 trailing 100 games average -391.2 steps 540 indy_move
+episode  18 score -363.1 trailing 100 games average -389.7 steps 570 indy_move
+episode  19 score -313.6 trailing 100 games average -385.9 steps 600 indy_move
+episode  20 score -361.3 trailing 100 games average -384.7 steps 630 indy_move
+episode  21 score -518.3 trailing 100 games average -390.8 steps 660 indy_move
+episode  22 score -218.2 trailing 100 games average -383.3 steps 690 indy_move
+episode  23 score -370.2 trailing 100 games average -382.7 steps 720 indy_move
+episode  24 score -479.5 trailing 100 games average -386.6 steps 750 indy_move
+episode  25 score -284.7 trailing 100 games average -382.7 steps 780 indy_move
+episode  26 score -161.5 trailing 100 games average -374.5 steps 810 indy_move
+episode  27 score -60.5 trailing 100 games average -363.3 steps 840 indy_move
+episode  28 score -224.7 trailing 100 games average -358.5 steps 870 indy_move
+episode  29 score -273.6 trailing 100 games average -355.7 steps 900 indy_move
+episode  30 score -308.6 trailing 100 games average -354.1 steps 930 indy_move
+episode  31 score -152.6 trailing 100 games average -347.8 steps 960 indy_move
+episode  32 score -195.2 trailing 100 games average -343.2 steps 990 indy_move
+episode  33 score -196.2 trailing 100 games average -338.9 steps 1020 indy_move
+episode  34 score -293.7 trailing 100 games average -337.6 steps 1050 indy_move
+episode  35 score -312.7 trailing 100 games average -336.9 steps 1080 indy_move
+episode  36 score -341.3 trailing 100 games average -337.0 steps 1110 indy_move
+episode  37 score -348.9 trailing 100 games average -337.3 steps 1140 indy_move
+episode  38 score -286.0 trailing 100 games average -336.0 steps 1170 indy_move
+Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 737, in receive_once
+    self.stat_bytes += recv_buff(sock, b, p.buff_size)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 104, in recv_buff
+    d = sock.recv(buff_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_service.py", line 522, in call
+    responses = transport.receive_once()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 758, in receive_once
+    raise TransportException("receive_once[%s]: unexpected error %s"%(self.name, str(e)))
+rospy.exceptions.TransportException: receive_once[/robot_control]: unexpected error [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/irslab/catkin_ws/src/moveit_test/scripts/Updated_SAC_main.py", line 28, in <module>
+    observation_, reward, done= env.step(action/4)
+  File "/home/irslab/catkin_ws/src/moveit_test/scripts/indy_env_comm.py", line 32, in step
+    response = self.step_service(self.step_object)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_service.py", line 442, in __call__
+    return self.call(*args, **kwds)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_service.py", line 532, in call
+    raise ServiceException("transport error completing service call: %s"%(str(e)))
+rospy.service.ServiceException: transport error completing service call: receive_once[/robot_control]: unexpected error [Errno 104] Connection reset by peer

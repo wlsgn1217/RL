@@ -1,0 +1,32 @@
+action is  <class 'numpy.ndarray'> [[ 0.9601356   0.22503114  0.9028014  -0.94924843  0.164447   -0.21569698]]
+action is  <class 'numpy.ndarray'> [[ 0.14461997 -0.06847753  0.24789219 -0.6487731   0.8904926   0.7254576 ]]
+action is  <class 'numpy.ndarray'> [[ 0.43620974 -0.18042849  0.9280725   0.45819843  0.7735408  -0.7291554 ]]
+action is  <class 'numpy.ndarray'> [[-0.61013603  0.09522246 -0.7195058   0.0643312   0.5303269   0.7668029 ]]
+action is  <class 'numpy.ndarray'> [[ 0.1847721  -0.21369435 -0.62252015  0.8875095   0.56384885 -0.7514701 ]]
+action is  <class 'numpy.ndarray'> [[ 0.6387936   0.9510916  -0.9965785  -0.9187176  -0.23334488 -0.55336857]]
+action is  <class 'numpy.ndarray'> [[-0.30095232  0.7799683   0.22843486  0.20698075 -0.18794289 -0.13884449]]
+action is  <class 'numpy.ndarray'> [[ 0.22817563 -0.00140383  0.7892265   0.519624    0.83258295  0.06474138]]
+action is  <class 'numpy.ndarray'> [[ 0.6498742   0.09174734  0.95273817 -0.02829075  0.28123263 -0.74131143]]
+action is  <class 'numpy.ndarray'> [[ 0.14632812  0.4123486   0.43710896 -0.43504828 -0.7717184  -0.42620438]]
+action is  <class 'numpy.ndarray'> [[ 0.10801526 -0.8585669  -0.19173479 -0.75546914  0.89955795 -0.0566559 ]]
+action is  <class 'numpy.ndarray'> [[-0.55974954 -0.3609832   0.80844927  0.51796895  0.8365935   0.01237875]]
+action is  <class 'numpy.ndarray'> [[ 0.79445624  0.8378308   0.8881422  -0.56442165 -0.05084556  0.8453271 ]]
+action is  <class 'numpy.ndarray'> [[-0.77406734 -0.79519403 -0.35882518  0.18494853  0.32457927  0.3575661 ]]
+action is  <class 'numpy.ndarray'> [[-0.8171098  -0.8207057  -0.7251782   0.73076653  0.77675545  0.14521198]]
+action is  <class 'numpy.ndarray'> [[ 0.8800103  -0.8551239  -0.58758605  0.21481332 -0.85727966  0.8269876 ]]
+action is  <class 'numpy.ndarray'> [[-0.8039408   0.64415777 -0.82743907  0.9455278  -0.46493897  0.4984933 ]]
+action is  <class 'numpy.ndarray'> [[ 0.09904111  0.27305573 -0.35140818  0.2161445  -0.39818028  0.7957912 ]]
+action is  <class 'numpy.ndarray'> [[ 0.83682406 -0.38997763  0.696734    0.14746849  0.6256667  -0.409817  ]]
+action is  <class 'numpy.ndarray'> [[-0.02574873 -0.85973036  0.8830158   0.35645413 -0.5131968  -0.07585254]]
+action is  <class 'numpy.ndarray'> [[-0.8451704  -0.1833856   0.18987887  0.4166775  -0.94378364 -0.05200922]]
+action is  <class 'numpy.ndarray'> [[-0.65739435 -0.6781679   0.8710852   0.25460246  0.07738072 -0.93707705]]
+Traceback (most recent call last):
+  File "/home/irslab/catkin_ws/src/moveit_test/scripts/Updated_SAC_main.py", line 28, in <module>
+    steps += 1
+  File "/home/irslab/catkin_ws/src/moveit_test/scripts/indy_env_comm.py", line 32, in step
+    response = self.step_service(self.step_object)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_service.py", line 442, in __call__
+    return self.call(*args, **kwds)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_service.py", line 524, in call
+    raise ServiceException("service [%s] returned no response"%self.resolved_name)
+rospy.service.ServiceException: service [/robot_control] returned no response

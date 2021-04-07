@@ -1,0 +1,52 @@
+episode  0 score -262.0 trailing 100 games average -262.0 steps 30 indy_move
+episode  1 score -319.0 trailing 100 games average -290.5 steps 60 indy_move
+episode  2 score -156.6 trailing 100 games average -245.9 steps 90 indy_move
+episode  3 score -329.1 trailing 100 games average -266.7 steps 120 indy_move
+episode  4 score -266.1 trailing 100 games average -266.6 steps 150 indy_move
+episode  5 score -119.2 trailing 100 games average -242.0 steps 180 indy_move
+episode  6 score -247.7 trailing 100 games average -242.8 steps 210 indy_move
+episode  7 score -209.7 trailing 100 games average -238.7 steps 240 indy_move
+episode  8 score -0.1 trailing 100 games average -212.2 steps 270 indy_move
+episode  9 score -186.1 trailing 100 games average -209.5 steps 300 indy_move
+episode  10 score -189.1 trailing 100 games average -207.7 steps 330 indy_move
+episode  11 score -280.0 trailing 100 games average -213.7 steps 360 indy_move
+episode  12 score -289.6 trailing 100 games average -219.6 steps 390 indy_move
+episode  13 score -208.0 trailing 100 games average -218.7 steps 420 indy_move
+episode  14 score -327.5 trailing 100 games average -226.0 steps 450 indy_move
+episode  15 score -179.6 trailing 100 games average -223.1 steps 480 indy_move
+episode  16 score -304.9 trailing 100 games average -227.9 steps 510 indy_move
+episode  17 score -154.6 trailing 100 games average -223.8 steps 540 indy_move
+episode  18 score -226.3 trailing 100 games average -224.0 steps 570 indy_move
+episode  19 score -347.1 trailing 100 games average -230.1 steps 600 indy_move
+episode  20 score -354.9 trailing 100 games average -236.1 steps 630 indy_move
+episode  21 score -496.2 trailing 100 games average -247.9 steps 660 indy_move
+episode  22 score -17.9 trailing 100 games average -237.9 steps 690 indy_move
+episode  23 score -251.7 trailing 100 games average -238.5 steps 720 indy_move
+episode  24 score -323.2 trailing 100 games average -241.8 steps 750 indy_move
+episode  25 score -419.2 trailing 100 games average -248.7 steps 780 indy_move
+episode  26 score -320.1 trailing 100 games average -251.3 steps 810 indy_move
+episode  27 score -278.5 trailing 100 games average -252.3 steps 840 indy_move
+episode  28 score -242.4 trailing 100 games average -251.9 steps 870 indy_move
+episode  29 score -196.4 trailing 100 games average -250.1 steps 900 indy_move
+episode  30 score -317.3 trailing 100 games average -252.3 steps 930 indy_move
+episode  31 score -149.9 trailing 100 games average -249.1 steps 960 indy_move
+episode  32 score -87.7 trailing 100 games average -244.2 steps 990 indy_move
+episode  33 score -90.7 trailing 100 games average -239.7 steps 1020 indy_move
+episode  34 score -457.9 trailing 100 games average -245.9 steps 1050 indy_move
+episode  35 score -217.3 trailing 100 games average -245.1 steps 1080 indy_move
+episode  36 score -373.3 trailing 100 games average -248.6 steps 1110 indy_move
+episode  37 score -54.6 trailing 100 games average -243.5 steps 1140 indy_move
+episode  38 score -158.8 trailing 100 games average -241.3 steps 1170 indy_move
+episode  39 score -187.2 trailing 100 games average -239.9 steps 1200 indy_move
+episode  40 score -153.8 trailing 100 games average -237.8 steps 1230 indy_move
+episode  41 score -178.4 trailing 100 games average -236.4 steps 1260 indy_move
+Traceback (most recent call last):
+  File "/home/irslab/catkin_ws/src/moveit_test/scripts/Updated_SAC_main.py", line 28, in <module>
+    observation_, reward, done= env.step(action/4)
+  File "/home/irslab/catkin_ws/src/moveit_test/scripts/indy_env_comm.py", line 32, in step
+    response = self.step_service(self.step_object)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_service.py", line 442, in __call__
+    return self.call(*args, **kwds)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_service.py", line 524, in call
+    raise ServiceException("service [%s] returned no response"%self.resolved_name)
+rospy.service.ServiceException: service [/robot_control] returned no response

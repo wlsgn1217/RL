@@ -1,0 +1,24 @@
+episode  0 score -272.3 trailing 100 games average -272.3 steps 30 indy_move
+episode  1 score -171.8 trailing 100 games average -222.0 steps 60 indy_move
+episode  2 score -250.8 trailing 100 games average -231.6 steps 90 indy_move
+episode  3 score -363.2 trailing 100 games average -264.5 steps 120 indy_move
+episode  4 score -180.9 trailing 100 games average -247.8 steps 150 indy_move
+episode  5 score -337.6 trailing 100 games average -262.7 steps 180 indy_move
+episode  6 score -210.9 trailing 100 games average -255.3 steps 210 indy_move
+episode  7 score -366.8 trailing 100 games average -269.3 steps 240 indy_move
+episode  8 score -388.4 trailing 100 games average -282.5 steps 270 indy_move
+episode  9 score -312.1 trailing 100 games average -285.5 steps 300 indy_move
+episode  10 score -154.9 trailing 100 games average -273.6 steps 330 indy_move
+episode  11 score -382.3 trailing 100 games average -282.6 steps 360 indy_move
+episode  12 score -113.9 trailing 100 games average -269.7 steps 390 indy_move
+episode  13 score -413.0 trailing 100 games average -279.9 steps 420 indy_move
+Traceback (most recent call last):
+  File "/home/irslab/catkin_ws/src/moveit_test/scripts/Updated_SAC_main.py", line 28, in <module>
+    observation_, reward, done= env.step(action/4)
+  File "/home/irslab/catkin_ws/src/moveit_test/scripts/indy_env_comm.py", line 32, in step
+    response = self.step_service(self.step_object)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_service.py", line 442, in __call__
+    return self.call(*args, **kwds)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_service.py", line 524, in call
+    raise ServiceException("service [%s] returned no response"%self.resolved_name)
+rospy.service.ServiceException: service [/robot_control] returned no response

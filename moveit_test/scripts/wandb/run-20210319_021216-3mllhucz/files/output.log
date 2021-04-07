@@ -1,0 +1,58 @@
+episode  0 score -460.0 trailing 100 games average -460.0 steps 30 indy_move
+episode  1 score -472.0 trailing 100 games average -466.0 steps 60 indy_move
+episode  2 score -474.8 trailing 100 games average -468.9 steps 90 indy_move
+episode  3 score -470.6 trailing 100 games average -469.4 steps 120 indy_move
+episode  4 score -381.1 trailing 100 games average -451.7 steps 150 indy_move
+episode  5 score -288.0 trailing 100 games average -424.4 steps 180 indy_move
+episode  6 score -532.1 trailing 100 games average -439.8 steps 210 indy_move
+episode  7 score -414.5 trailing 100 games average -436.7 steps 240 indy_move
+episode  8 score -481.8 trailing 100 games average -441.7 steps 270 indy_move
+episode  9 score -270.2 trailing 100 games average -424.5 steps 300 indy_move
+episode  10 score -268.4 trailing 100 games average -410.3 steps 330 indy_move
+episode  11 score -316.1 trailing 100 games average -402.5 steps 360 indy_move
+episode  12 score -168.3 trailing 100 games average -384.5 steps 390 indy_move
+episode  13 score -139.3 trailing 100 games average -367.0 steps 420 indy_move
+episode  14 score -51.3 trailing 100 games average -345.9 steps 450 indy_move
+episode  15 score -358.1 trailing 100 games average -346.7 steps 480 indy_move
+episode  16 score -94.0 trailing 100 games average -331.8 steps 510 indy_move
+episode  17 score -309.2 trailing 100 games average -330.6 steps 540 indy_move
+episode  18 score -475.7 trailing 100 games average -338.2 steps 570 indy_move
+episode  19 score -295.3 trailing 100 games average -336.0 steps 600 indy_move
+episode  20 score -237.8 trailing 100 games average -331.4 steps 630 indy_move
+episode  21 score -374.2 trailing 100 games average -333.3 steps 660 indy_move
+episode  22 score -310.4 trailing 100 games average -332.3 steps 690 indy_move
+episode  23 score -210.3 trailing 100 games average -327.2 steps 720 indy_move
+episode  24 score -212.7 trailing 100 games average -322.7 steps 750 indy_move
+episode  25 score -358.3 trailing 100 games average -324.0 steps 780 indy_move
+episode  26 score -191.1 trailing 100 games average -319.1 steps 810 indy_move
+episode  27 score -441.0 trailing 100 games average -323.5 steps 840 indy_move
+episode  28 score -344.9 trailing 100 games average -324.2 steps 870 indy_move
+episode  29 score -484.2 trailing 100 games average -329.5 steps 900 indy_move
+episode  30 score -254.0 trailing 100 games average -327.1 steps 930 indy_move
+episode  31 score -249.5 trailing 100 games average -324.7 steps 960 indy_move
+episode  32 score -197.7 trailing 100 games average -320.8 steps 990 indy_move
+episode  33 score -493.9 trailing 100 games average -325.9 steps 1020 indy_move
+episode  34 score -397.4 trailing 100 games average -328.0 steps 1050 indy_move
+episode  35 score -200.1 trailing 100 games average -324.4 steps 1080 indy_move
+episode  36 score -74.8 trailing 100 games average -317.7 steps 1110 indy_move
+episode  37 score -263.8 trailing 100 games average -316.2 steps 1140 indy_move
+episode  38 score -189.4 trailing 100 games average -313.0 steps 1170 indy_move
+episode  39 score -271.7 trailing 100 games average -312.0 steps 1200 indy_move
+episode  40 score -295.7 trailing 100 games average -311.6 steps 1230 indy_move
+episode  41 score -404.6 trailing 100 games average -313.8 steps 1260 indy_move
+episode  42 score -138.4 trailing 100 games average -309.7 steps 1290 indy_move
+episode  43 score -135.7 trailing 100 games average -305.7 steps 1320 indy_move
+episode  44 score -186.2 trailing 100 games average -303.1 steps 1350 indy_move
+episode  45 score -57.8 trailing 100 games average -297.7 steps 1380 indy_move
+episode  46 score -242.6 trailing 100 games average -296.6 steps 1410 indy_move
+episode  47 score -411.1 trailing 100 games average -299.0 steps 1440 indy_move
+Traceback (most recent call last):
+  File "/home/irslab/catkin_ws/src/moveit_test/scripts/Updated_SAC_main.py", line 25, in <module>
+    observation = env.reset()
+  File "/home/irslab/catkin_ws/src/moveit_test/scripts/indy_env_comm.py", line 23, in reset
+    response = self.reset_service()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_service.py", line 442, in __call__
+    return self.call(*args, **kwds)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_service.py", line 524, in call
+    raise ServiceException("service [%s] returned no response"%self.resolved_name)
+rospy.service.ServiceException: service [/robot_reset] returned no response

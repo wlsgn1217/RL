@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/irslab/catkin_ws/src/moveit_test/scripts/Updated_SAC_main.py", line 27, in <module>
+    observation = env.reset()
+  File "/home/irslab/catkin_ws/src/moveit_test/scripts/indy_env_comm.py", line 23, in reset
+    response = self.reset_service()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_service.py", line 442, in __call__
+    return self.call(*args, **kwds)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_service.py", line 522, in call
+    responses = transport.receive_once()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 735, in receive_once
+    p.read_messages(b, msg_queue, sock)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_service.py", line 360, in read_messages
+    self._read_ok_byte(b, sock)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_service.py", line 343, in _read_ok_byte
+    raise ServiceException("service [%s] responded with an error: %s"%(self.resolved_name, str))
+rospy.service.ServiceException: service [/robot_reset] responded with an error: b"error processing request: global name 'state' is not defined"
